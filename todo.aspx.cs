@@ -68,7 +68,7 @@ namespace WebApplication1
                 {
                     using (SqlConnection conn = new SqlConnection(connectionString))
                     {
-                        string query ="UPDATE [TODO] SET [STATUS]=1 WHERE([work]=\'" + wroks + "\' AND [email]= \'" + email + "\')";
+                        string query ="UPDATE [TODO] SET [STATUS]=2 WHERE([work]=\'" + wroks + "\' AND [email]= \'" + email + "\')";
                         conn.Open();
                         SqlCommand cmd = new SqlCommand(query, conn);
                         cmd.ExecuteNonQuery();

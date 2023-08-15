@@ -54,22 +54,21 @@ namespace WebApplication1
                             cmd.Parameters.AddWithValue("@pass", password);
                             cmd.ExecuteNonQuery();
                             con.Close();
+                            ckeck = 0;
                         }
-                        ckeck = 0;
+                        
                         Session["mail"] = email;
                         Session["name"] = name;
                         Response.Redirect("todo.aspx");
                     }
                     catch(Exception ex) 
                     { 
-                        signError.Text = ex.Message;
+                        string Text = ex.Message;
+                        signError.Text = "Already exist";
                         ckeck++;
                     }
                 }
             }
-
-
-            signError.Text = "Sign up successful!";
         }
 
         protected void log_Click(object sender, EventArgs e)
