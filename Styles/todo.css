@@ -1,0 +1,130 @@
+﻿/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 1%;
+    padding: 5%;
+    background-color: #f2f2f2;
+}
+
+/* Styles for anchor tags acting as buttons */
+.button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 5px;
+}
+
+    .button-link:hover {
+        background-color: #555;
+    }
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.select, .Add {
+    flex-basis: 48%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        overflow: auto;
+    margin-right: 10px;
+}
+
+.ip {
+    margin-bottom: 10px;
+}
+
+.input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .btn:hover {
+        background-color: #555;
+    }
+
+/* Table Styles */
+.Tables {
+    display: flex;
+    flex-direction: row;
+}
+
+.pend, .comp {
+    flex-basis: 48%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .Tables {
+        flex-direction: column;
+    }
+
+    .pend, .comp {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .select, .Add {
+        flex-basis: 100%;
+    }
+}

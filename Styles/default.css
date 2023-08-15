@@ -1,0 +1,98 @@
+﻿/* Basic reset for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main page layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin: 5% 5% 5% 5%;
+}
+.forms {
+    display: flex;
+    flex-direction: row;
+    
+    margin: 5% 5% 5% 5%;
+}
+/* Form container */
+.signup,
+.login {
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.signup {
+    margin-right:10%;
+}
+
+    /* Form header */
+    .signup h3,
+    .login h3 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+/* Labels */
+.label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input fields */
+.inputbox {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.buttons {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Error messages */
+.errors {
+    color: red;
+    font-size: 12px;
+}
+
+/* Additional styles for specific elements */
+
+/* Button hover effect */
+.buttons:hover {
+    background-color: #0056b3;
+}
+
+/* Form hover effect */
+.signup:hover,
+.login:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color:floralwhite;
+}
